@@ -1,4 +1,5 @@
 from platform import *
+from turtle import position
 
 
 class Node:
@@ -113,6 +114,16 @@ class LinkedList:
         
         return current
 
+    def node_at_index(self, index):
+        if index == 0:
+            return self.head
+        else:
+            current = self.head
+            position = 0
+            
+            while position < index:
+                current = current.next_node
+    
     def __repr__(self):
         nodes = []
         current = self.head
