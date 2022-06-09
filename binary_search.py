@@ -1,14 +1,17 @@
+from zmq import SWAP
+
+
 def binary_search(list,target):
-    frist = 0
+    first = 0
     last = len(list) - 1
     
-    while frist <= last:
-        midpoint = (frist+last)//2
+    while first <= last:
+        midpoint = (first+last)//2
         
         if list[midpoint] == target:
             return midpoint
         elif list[midpoint] < target:
-            frist = midpoint + 1
+            first = midpoint + 1
         else: 
             last = midpoint - 1
     return None

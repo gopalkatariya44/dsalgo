@@ -30,7 +30,7 @@ class LinkedList:
     def size(self):
         """
         return the no. of node in the list\n
-        Takes o(n) time
+        Takes `o(n)` time
         """
         current = self.head
         count = 0
@@ -44,7 +44,7 @@ class LinkedList:
     def add(self, data):
         """
         Add new node containing data at head of the list\n
-        Takes O(1) time
+        Takes `O(1)` time
         """
 
         new_node = Node(data)
@@ -55,7 +55,7 @@ class LinkedList:
         """
         search for the frist node contatining data that matches the key\n
         return `Node` or `None` if data not foun\n
-        Takes O(n) time
+        Takes `O(n)` time
         """
         current = self.head
 
@@ -69,9 +69,9 @@ class LinkedList:
     def insert(self, data, index):
         """
         Inserts a new Node containing data at index position\n
-        Insertion Takes O(1) time but finding the node at the insertion point takes O(n) time.\n
+        Insertion Takes `O(1)` time but finding the node at the insertion point takes O(n) time.\n
 
-        Takes overll O(0) time
+        Takes overll `O(0)` time
         """
         if index == 0:
             self.add(data)

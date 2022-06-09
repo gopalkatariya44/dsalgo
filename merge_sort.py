@@ -68,6 +68,6 @@ def verify_sorted(list):
         return True
     return list[0] < list[1] and verify_sorted(list[1:])
 
-mylist = [1,2,3,4,5,1]
+mylist = [1,2,3,4,5]
 
 print(verify_sorted(mylist))
